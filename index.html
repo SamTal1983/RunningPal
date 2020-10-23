@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+        
+        <title>RunningPal: Your Running Assistant</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>RunningPal</h1>
+            <h2>Your Running Assistant</h2>
+            <button>Sign Up</button>
+            <button>Log In</button>
+        <!--modal for login-->
+        </header>
+        <!--accordion for features-->
+        <h3>Run Analysis</h3>
+        <p>You will be able to keep track of the work you've done by distance you ran. We will save your data in our database, and when you'll run that distance again, we will provide you with statistics, graph, the difference between the runs and all previous relevant runs. You'll be able to see for yourself how much better you're doing!</p>
+
+        <h3>Shoes Management</h3>
+        <p>Let us help you manage your shoes. We will color-code your shoes based on your distance: <br/>Green: 0-149.99 miles <br/>Yellow: 150-249.99 miles <br/> Red: 250 miles and up <br/> Flashing Red: above 500 miles <br/> Blue: unused shoes for a period of over 6 months, potential for retirement </br> We are here for your healthy feet!</p>
+
+        <h3>Your Intervals</h3>
+        <p>Let's set up your intervals the way you want to set it up. You'll be able to name up to 10 different paces and set time for them; you'll also be able to edit them, just in case you want something else. You can set up a total time for the intervals or just let them run in a loop (we'll create that loop for you) until you'll manually stop the clock. However you want it, you can have it! Then, get the RunningPal app on your phone, log in to your account choose your interval plan, and start your run. We've got you covered!</p>
+        
+        <!--sign up form-->
+        <form>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <label for="rePassword">Retype Your Password</label>
+            <input type="password" id="rePassword" name="password" placeholder="Repeat Password">
+            <input type="submit" value="submit">
+        </form>
+
+        <!--jQuery must come first, then Popper.js then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+    </body>
+</html>
